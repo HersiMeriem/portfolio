@@ -1,0 +1,327 @@
+/* Styles pour le footer */
+.footer {
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer .copyright-box {
+    margin: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer .credits {
+    margin-top: 10px;
+    color: #af4261;
+    font-weight: bold;
+}
+
+.footer a {
+    color: #af4261;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+
+/* Section Intro */
+#home {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    animation: backgroundSlide 10s ease-in-out infinite;
+}
+
+@keyframes backgroundSlide {
+    0% { background-position: 0 0; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0 0; }
+}
+
+.overlay-itro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.intro-content {
+    z-index: 2;
+    text-align: center;
+    animation: fadeInUp 2s ease-out;
+}
+
+.intro-subtitle {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    letter-spacing: 3px;
+    animation: slideIn 2s ease-in-out;
+}
+
+/* Texte dynamique "Software Developer" */
+.dynamic-text {
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-style: italic;
+    border-right: 3px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite, fadeInBlur 1s ease-out forwards, colorChange 6s linear infinite;
+    color: #fff;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgba(255, 255, 255, 0.75); }
+}
+
+@keyframes fadeInBlur {
+    0% { filter: blur(10px); opacity: 0; }
+    100% { filter: blur(0); opacity: 1; }
+}
+
+
+
+.dynamic-text i {
+    background: linear-gradient(45deg, #995921, #ffffff, #353632);
+    background-clip: text;
+    color: transparent;
+    animation: gradient-animation 3s ease infinite;
+}
+
+/* Section About */
+.about-mf {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f0f0f0, #f7f7f7);
+}
+
+.box-shadow-full {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box-shadow-full:hover {
+    transform: scale(1.05);
+}
+
+.about-img img {
+    border-radius: 50%;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Style des titres */
+.title-s {
+    color: #3a3a3a;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Section Skills */
+.skill-mf {
+    margin-top: 2.5rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.skill {
+    text-align: center;
+    padding: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px; 
+    transition: transform 0.3s ease; 
+}
+
+.skill img:hover {
+    transform: scale(1.1); 
+}
+
+.skill span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Section About Me */
+.about-me .lead {
+    font-size: 1.3rem;
+    color: #5a5a5a;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+}
+
+.about-description {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.title-left {
+    font-size: 2.2rem;
+    color: #3498db;
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Section Projects */
+#projects {
+    padding: 60px 0;
+    background-color: #fff; /* Fond clair pour contraste */
+}
+
+/* Titre de la section */
+.title-box {
+    margin-bottom: 50px;
+}
+
+.title-a {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.subtitle-a {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.line-mf {
+    width: 100px;
+    height: 5px;
+    background-color: #af4261;
+    margin: 0 auto;
+}
+
+/* Styles pour les boîtes de projets */
+.project-box {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.project-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image du projet */
+.project-img {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 5px solid #af4261;
+}
+
+.project-img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+}
+
+.project-box:hover .project-img img {
+    transform: scale(1.1);
+}
+
+/* Contenu du projet */
+.project-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.p-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.p-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Lien vers le projet */
+.p-link {
+    display: inline-block;
+    background-color: #af4261;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.p-link:hover {
+    background-color: #f0f0f0;
+    color: #af4261;
+    transform: scale(1.05);
+}
