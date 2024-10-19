@@ -20,12 +20,10 @@
 
 .footer .credits {
     margin-top: 10px;
-    color: #af4261;
     font-weight: bold;
 }
 
 .footer a {
-    color: #af4261;
     text-decoration: none;
     transition: color 0.3s ease;
 }
