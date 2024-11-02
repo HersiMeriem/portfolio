@@ -115,108 +115,10 @@
     animation: gradient-animation 3s ease infinite;
 }
 
-/* Section About */
-.about-mf {
-    padding: 4rem 0;
-    background: linear-gradient(135deg, #f0f0f0, #f7f7f7);
-}
 
-.box-shadow-full {
-    background-color: #fff;
-    padding: 40px;
-    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    transition: transform 0.3s ease-in-out;
-}
 
-.box-shadow-full:hover {
-    transform: scale(1.05);
-}
 
-.about-img img {
-    border-radius: 50%;
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s ease;
-}
 
-.about-img img:hover {
-    transform: scale(1.2) rotate(5deg);
-}
-
-/* Style des titres */
-.title-s {
-    color: #3a3a3a;
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Section Skills */
-.skill-mf {
-    margin-top: 2.5rem;
-}
-
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 15px;
-}
-
-.skill {
-    text-align: center;
-    padding: 10px; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 5px; 
-    transition: transform 0.3s ease; 
-}
-
-.skill img:hover {
-    transform: scale(1.1); 
-}
-
-.skill span {
-    display: block;
-    margin-top: 10px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: #444;
-}
-
-.skill:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Section About Me */
-.about-me .lead {
-    font-size: 1.3rem;
-    color: #5a5a5a;
-    line-height: 1.9;
-    margin-bottom: 1.5rem;
-}
-
-.about-description {
-    font-size: 1.3rem;
-    color: #333;
-    font-weight: 500;
-}
-
-.title-left {
-    font-size: 2.2rem;
-    color: #3498db;
-    border-left: 5px solid #3498db;
-    padding-left: 15px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
 
 /* Section Projects */
 #projects {
